@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHistoryBg"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/textView_dices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_dices"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"/>
+
+        <Button
+            android:id="@+id/button_minusDices"
+            android:layout_width="40dp"
+            android:layout_height="41dp"
+            android:onClick="onMinusDicesClicked"
+            android:text="@string/text_minus"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="16dp"/>
+
+        <TextView
+            android:id="@+id/textView_numDices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="26dp"/>
+
+        <Button
+            android:id="@+id/button_plusDices"
+            android:layout_width="40dp"
+            android:layout_height="41dp"
+            android:onClick="onPlusDicesClicked"
+            android:text="@string/text_plus"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHistoryBg"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <Button
+            android:id="@+id/button_rolld5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRollClicked"
+            android:text="@string/text_d5"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="96dp"/>
+
+        <Button
+            android:id="@+id/button_rolld8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRollClicked"
+            android:text="@string/text_d8"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="96dp"/>
+
+        <Button
+            android:id="@+id/button_rolld10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRollClicked"
+            android:text="@string/text_d10"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="96dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:lineSpacingExtra="4sp"
+        android:padding="4sp"
+        android:text="Select number of dice\nThen click any of the buttons above\n\nGood luck"
+        android:textSize="24sp"
+        android:typeface="serif"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="175dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHistoryBg"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="4sp"
+        android:orientation="vertical"
+        android:padding="4sp">
+
+        <TextView
+            android:id="@+id/textView_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_history"
+            android:textSize="18sp"/>
+
+        <ScrollView
+            android:id="@+id/scrollView_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="5sp"/>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

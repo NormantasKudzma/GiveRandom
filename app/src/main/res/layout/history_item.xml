@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="4sp"
+          android:paddingTop="7sp"
+          android:paddingBottom="5sp"
+          android:text="SUCCESS\n[1, 2, 3, 5, 6, 7]\n[Extras: 1, 2]">
+
+</TextView>

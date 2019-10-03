@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Give random number</string>
+    <string name="text_plus">+</string>
+    <string name="text_minus">-</string>
+    <string name="text_dices">Dices:</string>
+    <string name="text_d5">d5</string>
+    <string name="text_d8">d8</string>
+    <string name="text_d10">d10</string>
+    <string name="text_history">History:</string>
+</resources>
